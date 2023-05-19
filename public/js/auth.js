@@ -5,7 +5,7 @@ miFormulario.addEventListener('submit', ev => {
 
     const url = ( window.location.host.includes('localhost') )
     ? 'http://localhost:8080/api/auth/'
-    : 'https://socket-chat-production-6788.up.railway.app/api/auth'
+    : 'https://socket-chat-production-6788.up.railway.app/api/auth/'
 
     ev.preventDefault();
 
@@ -43,7 +43,7 @@ function handleCredentialResponse(response) {
 
     const url = ( window.location.host.includes('localhost') )
     ? 'http://localhost:8080/api/auth/'
-    : 'https://socket-chat-production-6788.up.railway.app/api/auth'
+    : 'https://socket-chat-production-6788.up.railway.app/api/auth/'
 
     const body = { id_token: response.credential };    
 

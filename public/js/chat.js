@@ -1,7 +1,7 @@
 
 const url = ( window.location.host.includes('localhost') )
             ? 'http://localhost:8080/api/auth/'
-            : 'https://socket-chat-production-6788.up.railway.app/api/auth'
+            : 'https://socket-chat-production-6788.up.railway.app/api/auth/'
 
 let usuario = null;
 let socket = null;
