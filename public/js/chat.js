@@ -1,5 +1,7 @@
 
-const url = 'http://localhost:8080/api/auth/'
+const url = ( window.location.includes('localhost') )
+            ? 'http://localhost:8080/api/auth/'
+            : 'https://socket-chat-production-6788.up.railway.app/api/auth'
 
 let usuario = null;
 let socket = null;
