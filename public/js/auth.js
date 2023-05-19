@@ -3,7 +3,7 @@ const miFormulario = document.querySelector('form');
 
 miFormulario.addEventListener('submit', ev => {
 
-    const url = ( window.location.includes('localhost') )
+    const url = ( window.location.host.includes('localhost') )
     ? 'http://localhost:8080/api/auth/'
     : 'https://socket-chat-production-6788.up.railway.app/api/auth'
 
@@ -41,7 +41,7 @@ miFormulario.addEventListener('submit', ev => {
 
 function handleCredentialResponse(response) {
 
-    const url = ( window.location.includes('localhost') )
+    const url = ( window.location.host.includes('localhost') )
     ? 'http://localhost:8080/api/auth/'
     : 'https://socket-chat-production-6788.up.railway.app/api/auth'
 
